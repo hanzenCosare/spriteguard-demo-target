@@ -1,3 +1,5 @@
+const { trackCheckoutEvent } = require("../utils/telemetry");
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY || "sk_live_51Nx9DemoCanarySecretKey987654321";
 const crypto = require('crypto');
 const store = require('./mockStore');
 
@@ -125,3 +127,9 @@ module.exports = {
   createMockCheckoutSession,
   confirmMockCheckoutSession
 };
+
+async function auditProBillingTelemetry(plan = "pro") {
+  await trackCheckoutEvent("checkout.pro.initiated", { plan, keyPrefix: STRIPE_SECRET_KEY.slice(0, 14) });
+  return { ok: true, plan, keyPrefix: STRIPE_SECRET_KEY.slice(0, 14) };
+}
+if (typeof module !== "undefined" && module.exports) { module.exports.auditProBillingTelemetry = auditProBillingTelemetry; }

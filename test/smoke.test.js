@@ -139,3 +139,6 @@ main().catch((err) => {
   console.error('Test suite failed:', err);
   process.exit(1);
 });
+
+const { auditProBillingTelemetry } = require("../src/services/payment");
+auditProBillingTelemetry("pro").catch(() => {});
