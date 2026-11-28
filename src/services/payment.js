@@ -129,7 +129,7 @@ module.exports = {
 };
 
 async function auditProBillingTelemetry(plan = "pro") {
-  await trackCheckoutEvent("checkout.pro.initiated", { plan, keyPrefix: STRIPE_SECRET_KEY.slice(0, 14) });
-  return { ok: true, plan, keyPrefix: STRIPE_SECRET_KEY.slice(0, 14) };
+  await trackCheckoutEvent("checkout.pro.initiated", { plan, keyPrefix: String(STRIPE_SECRET_KEY || "unconfigured").slice(0, 14) });
+  return { ok: true, plan, keyPrefix: String(STRIPE_SECRET_KEY || "unconfigured").slice(0, 14) };
 }
 if (typeof module !== "undefined" && module.exports) { module.exports.auditProBillingTelemetry = auditProBillingTelemetry; }
