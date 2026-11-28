@@ -1,0 +1,226 @@
+/* Billing & Plans */
+.billing-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.billing-period-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.savings-pill {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-success);
+  background: var(--color-success-soft);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.plan-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-xs);
+}
+
+.plan-card.highlighted {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary), var(--shadow-sm);
+}
+
+.plan-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.plan-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.plan-tagline {
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.plan-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.plan-price {
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.plan-price-unit {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.plan-billing-note {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  min-height: 18px;
+}
+
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.plan-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-primary);
+}
+
+.plan-feature-item svg {
+  width: 15px;
+  height: 15px;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.subscription-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.summary-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.summary-metric-label {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.summary-metric-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Team */
+.member-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.member-name {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.member-sub {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* Settings */
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.settings-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+}
+
+.settings-section-header {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings-section-body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.session-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+}
+
+.settings-save-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+/* Checkout Summary */
+.checkout-summary-box {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.checkout-row.total {
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 14px;
+}

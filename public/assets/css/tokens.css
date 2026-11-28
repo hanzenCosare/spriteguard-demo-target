@@ -1,0 +1,90 @@
+:root {
+  /* Core Surfaces */
+  --color-background: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-surface-secondary: #F1F3F6;
+  --color-surface-hover: #F5F6FA;
+
+  /* Text Hierarchy */
+  --color-text-primary: #171A21;
+  --color-text-secondary: #687182;
+  --color-text-muted: #929BAA;
+
+  /* Borders */
+  --color-border: #E6E9EF;
+  --color-border-strong: #D6DBE4;
+
+  /* Brand & Accents */
+  --color-primary: #635BDB;
+  --color-primary-hover: #5149C7;
+  --color-primary-soft: #EFEEFF;
+  --color-primary-border: #D5D2FA;
+
+  /* Semantic Status */
+  --color-success: #16A36A;
+  --color-success-soft: #E9F7F0;
+  --color-warning: #D99432;
+  --color-warning-soft: #FFF5E6;
+  --color-danger: #D95656;
+  --color-danger-soft: #FFF0F0;
+  --color-info: #2D7FF9;
+  --color-info-soft: #EDF4FF;
+
+  /* Sidebar Palette */
+  --sidebar-background: #191B25;
+  --sidebar-surface: #232635;
+  --sidebar-border: #2B2F42;
+  --sidebar-text: #AEB4C1;
+  --sidebar-text-muted: #757D90;
+  --sidebar-text-active: #FFFFFF;
+
+  /* Chart Palette */
+  --chart-1: #635BDB;
+  --chart-2: #2D7FF9;
+  --chart-3: #16A36A;
+  --chart-4: #D99432;
+  --chart-5: #8E95A9;
+
+  /* Typography */
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(23, 26, 33, 0.04);
+  --shadow-sm: 0 1px 3px rgba(23, 26, 33, 0.06), 0 1px 2px rgba(23, 26, 33, 0.04);
+  --shadow-md: 0 6px 16px rgba(23, 26, 33, 0.08), 0 2px 4px rgba(23, 26, 33, 0.04);
+  --shadow-lg: 0 16px 36px rgba(23, 26, 33, 0.14), 0 4px 10px rgba(23, 26, 33, 0.06);
+
+  /* Layout Dimensions */
+  --sidebar-width: 252px;
+  --header-height: 60px;
+  --content-max-width: 1320px;
+
+  /* Z-Index Layers */
+  --z-base: 1;
+  --z-sticky: 20;
+  --z-sidebar: 40;
+  --z-dropdown: 60;
+  --z-modal: 80;
+  --z-toast: 100;
+
+  /* Motion */
+  --transition-fast: 140ms ease;
+  --transition-base: 180ms ease;
+}

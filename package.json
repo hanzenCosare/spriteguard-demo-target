@@ -1,0 +1,25 @@
+{
+  "name": "pulsemetrics",
+  "version": "1.0.0",
+  "description": "PulseMetrics — AI API usage analytics, billing, and team management mock SaaS platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/smoke.test.js",
+    "test:api": "node test/api.test.js"
+  },
+  "keywords": [
+    "saas",
+    "analytics",
+    "mock-api",
+    "express",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
